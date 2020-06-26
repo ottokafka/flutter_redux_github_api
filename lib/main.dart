@@ -87,6 +87,10 @@ class ViewJsonState extends State<ViewJson> {
                 Center(child: Text("${state.json[0]["id"]}")),
                 Center(child: Text("${state.json[0]["name"]}")),
                 Center(child: Text("${state.json[0]["full_name"]}")),
+                Text(""),
+                Center(child: Text("${state.json[1]["id"]}")),
+                Center(child: Text("${state.json[1]["name"]}")),
+                Center(child: Text("${state.json[1]["full_name"]}")),
               ],
             ),
           );
@@ -118,7 +122,7 @@ class GetNameAction {
 class GetJsonAction {
   final dynamic json;
 
-  dynamic get name => this.json;
+  dynamic get json1 => this.json;
   GetJsonAction(this.json);
 }
 
